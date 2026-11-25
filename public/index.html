@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background: #f5f7fb;
+        color: #172033;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      .course {
+        padding: 1rem;
+        border-radius: 8px;
+        background: white;
+        box-shadow: 0 2px 8px rgb(23 32 51 / 10%);
+      }
+
+      .status {
+        color: #53617a;
+      }
+
+      .error {
+        color: #b42318;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>All courses</h1>
+      <p id="status" class="status">Loading courses...</p>
+      <ul id="courses" class="courses"></ul>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
