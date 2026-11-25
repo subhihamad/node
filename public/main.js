@@ -1,6 +1,6 @@
 const statusElement = document.querySelector("#status");
 const coursesElement = document.querySelector("#courses");
-const coursesApiUrl = "http://localhost:3000/api/courses?limit=1000";
+const coursesApiUrl = "/api/courses?limit=1000";
 
 function renderCourses(courses) {
   coursesElement.replaceChildren();
